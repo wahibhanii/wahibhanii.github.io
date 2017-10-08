@@ -1,17 +1,83 @@
 <!DOCTYPE>
 <html>
   <head>
-    <title>
-      Haniiful Wahib
-    </title>
+    <title>Haniiful Wahib</title>
+    <link href="./Styles/style.css" rel="stylesheet" type="text/css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Fredericka+the+Great|Goudy+Bookletter+1911|Kalam');
+    </style>
   </head>
   <body>
-    <h1>Wahib</h1>
-    <h2>Profile</h2>
-    <p>
-      Haniiful Wahib Su'ud <br />
-      Pekanbaru, 7 April 1994 <br />
-    </p>
+    <div class="main-body">
+      <section class= "leftpanel"> <!--Main Profile fixed on the left side panel of the page-->
+        <div class= "mainprofile amatic">
+          <h1>Wahib</h1>
+          <img src="./images/profpic.jpg" alt="Haniiful Wahib" class="profpic">
+          <p>
+            Haniiful Wahib Su'ud <br />
+            Pekanbaru, 7 April 1994 <br />
+            Hacktiv8 #14 Student
+          </p>
+        </div>
+        <nav class="goudy">
+          <ul>
+            <li><a href="#id-profile">Profile ></a></li>
+            <li><a href="#id-portofolios">Portofolios ></a></li>
+            <li><a href="#id-gallery">Gallery  ></a></li>
+            <li><a href="#id-contact">Contact ></a></li>
+          </ul>
+        </nav>
+      </section>
+      <section class="rightpanel"> <!--Content, placed on the righ side panel of the page-->
+        <div class="content kalam">
+          <div> <!--Profile Section-->
+            <h2 id="id-profile">Profile</h2>
+            <p> 
+              Hello everyone!<br />
+              My name is Haniiful Wahib Su'ud, and people call me Wahib. I was born in Pekanbaru on 7 April 1994.
+              That makes me 23 years old now. I live in Pamulang in the City of Tangerang Selatan. <br />
+              I have an education background in electrical engineering. I was working in construction industry for almost two years
+              until i decided to move to tech industry.
+            </p>
+          </div>
+          <div><!--Portofolio Section-->
+            <h2 id="id-portofolio">Portofolios</h2>
+            <p> Here are some of my works:</p>
+            <ol>
+              <li class="indent"><a href="https://wahibhanii.github.io/project-itenerary/" target="_blank"> Itenerary </a></li>
+              <li class="indent">..Coming Soon</li>
+              <li class="indent">..Coming Soon</li>
+            </ol>
+          </div>
+          <div> <!--Gallery Section-->
+            <h2 id="id-gallery">Gallery</h2>
+            <p>Some pictures i've taken....just bcause :) <br />
+              <br />
+                coming soon...
+            </p>
+          </div>
+          <div><!--Contact Section-->
+            <h2 id="id-contact">Contact</h2>
+            <ul>
+              <li><a href="wahib.hanii@gmail.com" class="whitefont"><img class="link-icon" src="./images/email-512.png" title="e-mail" alt="e-mail">wahib.hanii@gmail.com</a> </li>
+              <li><a href="https://www.linkedin.com/in/wahibhanii/" class="whitefont"><img class="link-icon" src="./images/linkedin.png" title="linkedin" alt="linkedin">wahibhanii</a></li>
+              <li><a href="https://github.com/wahibhanii" class="whitefont"><img class="link-icon" src="./images/githubwhite.png" title="github" alt="github">wahibhanii</a></li>
+            </ul>
+            <p class="indent topspace">Leave a Message Here</p>
+            <form>
+              E-mail:<br>
+              <input type="text" name="email"><br>
+              <textarea name="message" rows="5" cols="40"></textarea> <br />
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+        <p class="float-left"> © 2017 wahibhanii </p>
+        <p class="float-right"> powered by GitHub Pages</p>      
+    </footer>
   </body>
 
 </html>
